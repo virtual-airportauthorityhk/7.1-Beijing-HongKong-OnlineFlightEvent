@@ -3,200 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香港特别行政区回归28周年纪念 · 京港连飞活动</title>
+    <title>724 This line should be unreachable</title>
     <style>
+        :root {
+            --accent: #000;
+            --gray: #86868b;
+            --border: #e5e5e5;
+        }
+
         body {
-            font-family: 'Microsoft YaHei', Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #ffffff;
+            color: var(--accent);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
         }
-        .container {
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 12%;
+            position: relative;
+        }
+
+        .bg-text {
+            position: absolute;
+            font-size: 30vw;
+            font-weight: 900;
+            color: #f5f5f7;
+            z-index: -1;
+            right: 5vw;
+            bottom: -5vh;
+            user-select: none;
+        }
+
+        h1 { font-size: 56px; font-weight: 600; margin: 0; letter-spacing: -2px; }
+
+        .description {
+            font-size: 20px;
+            color: var(--gray);
             max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 24px 0;
+            line-height: 1.6;
         }
-        header {
-            background-color: #005baa;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        h2 {
-            color: #005baa;
-            border-bottom: 2px solid #005baa;
-            padding-bottom: 5px;
-            margin-top: 25px;
-        }
-        .info-box {
-            background-color: #f9f9f9;
-            border-left: 4px solid #005baa;
-            padding: 15px;
-            margin: 15px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #005baa;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            border-radius: 5px;
-        }
-        .btn {
+
+        .status-block {
             display: inline-block;
-            background-color: #005baa;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px 0;
-            font-weight: bold;
-            transition: background-color 0.3s;
+            background: #f5f5f7;
+            padding: 10px 16px;
+            border-left: 3px solid #000;
+            font-family: "SFMono-Regular", Consolas, monospace;
+            font-size: 14px;
+            margin: 20px 0;
+            width: fit-content;
         }
-        .btn:hover {
-            background-color: #003d7a;
+
+        .status-block span { color: #d63031; font-weight: 600; }
+
+        footer {
+            padding: 60px 12%;
+            font-size: 12px;
+            color: var(--gray);
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            border-top: 1px solid var(--border);
+            line-height: 1.8;
         }
-        .contact-info {
-            margin: 15px 0;
-        }
-        .contact-info p {
-            margin: 8px 0;
-        }
-        .sponsor-item {
-            margin-bottom: 8px;
-        }
-        .frequency-item {
-            margin: 6px 0;
+
+        .contact { text-align: right; }
+        .contact a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .main { padding: 0 8%; }
+            footer { padding: 40px 8%; grid-template-columns: 1fr; gap: 20px; }
+            .contact { text-align: left; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>香港特别行政区回归28周年纪念 · 京港连飞活动</h1>
-            <p>2025年7月1日 | RFS多人连飞活动</p>
-        </header>
 
-        <section>
-            <h2>活动简介</h2>
-            <p>为庆祝香港回归祖国28周年，虚拟香港机场管理局(VAAHK)联合多家虚拟航空公司举办京港连飞活动，欢迎各位飞行爱好者参与！</p>
-            
-            <div class="info-box">
-                <p><strong>活动日期：</strong>2025年7月1日（星期二）</p>
-                <p><strong>活动时间：</strong>12:00（准备），12:30（放行）</p>
-                <p><strong>飞行时长：</strong>约3小时</p>
-                <p><strong>活动服务器：</strong>官方一服</p>
-            </div>
-            
-            <a href="https://csnportal.virtcxa.net/activity/12" class="btn">点击此处报名参加活动</a>
-        </section>
-
-        <section>
-            <h2>飞行信息</h2>
-            <table>
-                <tr>
-                    <th>项目</th>
-                    <th>详情</th>
-                </tr>
-                <tr>
-                    <td>起飞机场</td>
-                    <td>北京首都国际机场（ZBAA）</td>
-                </tr>
-                <tr>
-                    <td>起飞跑道</td>
-                    <td>18L</td>
-                </tr>
-                <tr>
-                    <td>降落机场</td>
-                    <td>香港国际机场（VHHH）</td>
-                </tr>
-                <tr>
-                    <td>降落跑道</td>
-                    <td>07L</td>
-                </tr>
-                <tr>
-                    <td>适用机型</td>
-                    <td>
-                        空客A320系列、A330系列（A330-700L除外）、A340系列、A350系列、A380系列<br>
-                        波音B747系列、B777系列、B787系列
-                    </td>
-                </tr>
-                <tr>
-                    <td>适用涂装</td>
-                    <td>中国境内所有航空公司（含港澳台地区航空公司）、天际航空、垂天云航空、大韩航空标准涂装</td>
-                </tr>
-            </table>
-            
-            <h3>航路信息</h3>
-            <div class="info-box">
-                <p><strong>KML航路文件：</strong> <a href="https://share.weiyun.com/ihBXweaN">点击下载</a></p>
-            </div>
-            
-            <h3>通讯频道</h3>
-            <div class="info-box">
-                <p><strong>南山频道频率：</strong></p>
-                <p class="frequency-item"><strong>北京首都国际机场（ZBAA）：</strong>1927595</p>
-                <p class="frequency-item"><strong>香港飞行管制区（VHHK 区调）：</strong>1695102</p>
-                <p class="frequency-item"><strong>香港国际机场（VHHH 进近/塔台）：</strong>1967222</p>
-                <p class="frequency-item"><strong>香港国际机场（VHHH 地面）：</strong>1967223</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>组织机构</h2>
-            <div class="info-box">
-                <p class="sponsor-item"><strong>主办单位：</strong>虚拟香港机场管理局 (VAAHK)</p>
-                <p class="sponsor-item"><strong>协办单位：</strong></p>
-                <p class="sponsor-item">中国南方航空虚拟集团有限公司</p>
-                <p class="sponsor-item">挽苑航空集团</p>
-                <p class="sponsor-item">天际航空</p>
-                <p class="sponsor-item">云翼控股集团有限公司</p>
-                <p class="sponsor-item">大韩航空</p>
-                <p class="sponsor-item">虚拟天合联盟</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>活动咨询</h2>
-            <div class="info-box">
-                <p><strong>官方邮箱：</strong>info.airportauthorityhk.virtual@gmail.com</p>
-                <p><strong>交流群组：</strong><a href="https://qm.qq.com/q/DnKr6KZT3O">点击加入QQ群</a></p>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2025 虚拟香港机场管理局 VAAHK - 京港连飞活动</p>
-            <p>本活动为虚拟飞行爱好者交流活动，与真实航空公司及机构无关</p>
-        </footer>
+    <div class="main">
+        <div class="bg-text">724</div>
+        <h1>你不应该在这里</h1>
+        <p class="description">
+            这是一个不应该被触达的位置<br>
+            你可能撕裂了时空连续体<br>
+            或者你就是那个传说中的 Bug 本 Bug
+        </p>
+        
+        <div class="status-block">
+            STATUS_CODE: <span>HTTP 724 UNREACHABLE LINE</span>
+        </div>
     </div>
+
+    <footer>
+        <div class="copyright">
+            © 2026 Virtual Airport Authority Hong Kong, VAAHK<br>
+            © 2026 Dubhe Nexus Aviation Interconnection Network
+        </div>
+        <div class="contact">
+            Support<br>
+            <a href="mailto:support@dubhe-nexus.virtual-vaahk.org">support@dubhe-nexus.virtual-vaahk.org</a>
+        </div>
+    </footer>
+
 </body>
 </html>
